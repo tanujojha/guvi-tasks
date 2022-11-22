@@ -1,0 +1,47 @@
+
+1. 
+HTTP stands for hypertext transfer protocol, it is a method computers and servers use to request and send information. It
+is used in request-response cycle. 
+
+HTTP/1.1:
+The first version of HTTP was created in 1997 and it went through several stages of development, this first version of HTTP 
+was called HTTP/1.1. This version is still in use on the web, however there were some drawbacks. The first drawback was
+that the HTTP/1.1 was known to have a slow response time and therefore there was an increase in the latency and page loading
+was slow. HTTP/1.x do not efficiently utilize traffic by compressing the request and response headers. Furthermore, the HTTP/1.1 
+protocol is known to be ineffective in resource prioritization, hence the underlying TCP connection is poorly utilized.
+
+
+HTTP/2:
+In 2015, a new version of HTTP called HTTP/2 was created.HTTP/2 solves several problems HTTP/1.1 has.In particular, 
+HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes 
+content during the loading process. To reduce the amount of data, HTTP/2 introduced header compression that uses a binary framing 
+layer to create a stream for communication. During the time of interaction, the TCP connection remains open and the binary format 
+for request and response headers enhances the overall performance.HTTP/2 also has multiplexing capability which enables multiple network 
+requests over a single TCP connection.
+
+
+2.
+In simple words Objects in JavaScript are an unordered collection of key:value pairs. Objects are complex and each object may contain a combination of
+primitive data-types as well as certain functions generally termed as methods. The keys can be variables or functions and are called properties and
+methods, respectively, in the context of an object. An object can be created with curly brackets {} with an optional list of properties.
+There are different ways to create Javascript Objects such as:
+
+Way 1-
+
+const coffeeCup = new Object();
+coffeeCup.color = 'Black';
+coffeeCup.design = 'Solid';
+
+Way -2
+
+const coffeeCup = {
+color: 'Black',
+design: 'Solid'
+};
+
+Way -3
+
+const coffeeCup = {};
+coffeeCup.color = 'Black';
+coffeeCup.design = 'Solid';
+

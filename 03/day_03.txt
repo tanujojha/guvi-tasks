@@ -1,0 +1,52 @@
+
+1.
+
+
+
+
+2.
+const resumeData = {
+	name: "Tanuj Ojha",
+	occupation: "MERN Stack Developer",
+	contacts: {
+		email: "tanujojha2042@gmail.com",
+		phone: 8755955263,
+		github: "github.com/tanujojha"
+	},
+	techSkills: ["javaSctipt", "ReactJs", "NodeJs", "MongoDB", "ExpressJs"],
+	otherSkills: ["Innovative", "Listening", "Team Player", "communication"],
+	education: {
+		graduation: {
+			program: "B.Tech",
+			university: "Sharda University",
+			cgpa: 6.0
+		},
+		higherSecondary: {
+			school: "APS Delhi Cantt",
+			percentage: 74.8
+		}
+	},
+	projects: {
+		chat-App: {
+			desc: "A chat application where users can chat with each other",
+			techStack: "MERN",
+			tools: ["jwt", "cookie-parser", "bcrypt", "socket.io"]
+		},
+		artSocials: {
+			desc: "A content sharing website"
+			techStack: "MERN",
+			tools: ["jwt", "cookie-parser", "bcrypt", "multer"]
+		},
+		keeper-App: {
+			desc: "A note keeping application"
+			techStack: "ReactJs",
+		},
+		secrets: {
+			desc: "A secrets/thoughts sharing website anonymously"
+			techStack: "NodeJs",
+			tools: ["NodeJs", "HTML", "CSS"]
+		}
+	},
+	languages: ["English", "Hindi"],
+	interests: ["swimming", "reading", "coding", "music", "travelling"]
+};
