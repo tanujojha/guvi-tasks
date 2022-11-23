@@ -1,7 +1,40 @@
 
 1.
+const sampleJson = {
+	"name": "Jon Doe",
+	"age": 25,
+	"ocupation": "MERN Developer",
+	"country": "India",
+	"city": "Delhi"
+}
 
+//TRADITIONAL FOR LOOP
 
+for(let i = 0; i<Object.keys(sampleJson).length; i++){
+    console.log(sampleJson[Object.keys(sampleJson)[i]]); // print values
+    console.log(Object.keys(sampleJson)[i]);  //print keys 
+}
+
+//FOR IN LOOP
+
+for(let item in sampleJson){
+    console.log(item);// print keys
+    console.log(sampleJson[item]); // print values
+}
+
+//FOR OF LOOP
+
+for(let item of Object.keys(sampleJson)){
+    console.log(item)   // print keys
+    console.log(sampleJson[item])   // print values
+}
+
+//FOREACH LOOP
+
+Object.keys(sampleJson).forEach((item)=>{
+    console.log(item);  // print keys
+    console.log(sampleJson[item]);  // print values
+})
 
 
 2.
