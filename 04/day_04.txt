@@ -1,0 +1,45 @@
+1.
+
+var obj1 = {name: "Person 1", age: 5};
+var obj2 = {age: 5, name: "Person 1"};
+
+console.log(JSON.stringify(obj1)== JSON.stringify(obj2)); //The output will be False
+
+
+2.
+
+<script>
+        var req = new XMLHttpRequest();
+        req.open("GET", "https://restcountries.com/v3.1/all");
+        req.send();
+        req.onload = ()=>{
+            let data = req.response;
+            let parsedData = JSON.parse(data)
+            parsedData.forEach(item => {
+                console.log(item.flag);
+            });
+
+        }
+</script>
+
+
+
+3.
+
+<script>
+        var req = new XMLHttpRequest();
+        req.open("GET", "https://restcountries.com/v3.1/all");
+        req.send();
+        req.onload = ()=>{
+            let data = req.response;
+            let parsedData = JSON.parse(data)
+            // console.log(parsedData[0].subregion); 
+            parsedData.forEach(item => {
+                console.log(item.name.common);
+                console.log(item.region);
+                console.log(item.subregion);
+                console.log(item.population);
+            });
+
+        }
+</script>

@@ -1,0 +1,113 @@
+1.
+
+class Movie{
+    constructor(title, studio, rating = "PG"){
+        this.title = title,
+        this.studio = studio,
+        this.rating = rating
+    }
+
+    getPG(movarr){
+        let res = [];
+        movarr.forEach(movie => {
+            movie.rating === "PG" && res.push(movie)
+        });
+
+        return res;
+    }
+}
+
+let m1 = new Movie("8 Mile", "Eminem", "ug")
+let m2 = new Movie("movi2", "name2", "PG")
+let m3 = new Movie("movie3", "name3", "PG13")
+let m4 = new Movie("lol", "rofl", "PG")
+
+let x = m1.getPG([m1,m2,m3,m4])
+console.log(x);
+
+
+2.
+
+class Circle{
+	constructor(radius=1.0, color="red"){
+		this.radius = radius,
+		this.color = color
+	}
+
+  getRadius(){
+    return this.radius;
+  }
+
+  setRadius(rad){
+    this.radius = rad
+  }
+
+  getColor(){
+    return this.color;
+  }
+
+  setColor(col){
+    this.color = col;
+  }
+
+  toString(){
+    return `Circle[radius=${this.radius},color=${this.color}]`
+  }
+
+  getArea(){
+    return 3.14 * (this.radius**2)
+  }
+
+  getCircumference(){
+    return 2 * 3.14 * this.radius
+  }
+
+}
+
+
+3.
+
+class Person{
+    constructor(name, sex, height, weight, country, hobbies){
+        this.name = name,
+        this.sex = sex,
+        this.height = height,
+        this.weight = weight,
+        this.country = country,
+        this.hobbies = hobbies
+    }
+
+    getName(){
+        return `the Person's name is ${this.name}`
+    }
+}
+
+let p1 = new Person("Tom", "Male", 184, 75, "USA", ["swimming", "coding"])
+console.log(p1.getName());
+
+
+4.
+
+class Uber{
+    constructor(dist){
+        this.dist = dist, //distance in km 
+        this.totprice = dist * 20;  // 20 rs per km so total price is total dist * 20
+    }
+
+    getDis(){
+        let dicountedPrice = this.totprice * 12/100  // 12% discount
+        return dicountedPrice;
+    }
+}
+
+let u1 = new Uber(10)
+console.log(u1.getDis());
+
+
+
+
+
+
+
+
+

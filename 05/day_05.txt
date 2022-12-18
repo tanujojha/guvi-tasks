@@ -1,0 +1,390 @@
+1.
+a.
+
+//Arrow Function
+let odd = (arr)=>{
+    let oddarr = []
+    arr.forEach(item => {
+        item%2!==0 && oddarr.push(item);
+    });
+
+    return oddarr;
+}
+
+let res = odd(arr);
+
+
+//IIFE Function
+(
+    function(arr){
+        let oddarr = []
+        arr.forEach(item => {
+            item%2!==0 && oddarr.push(item);
+        });
+
+        console.log(oddarr);
+    }
+)(arr)
+
+
+b.
+
+//Arrow Function
+let func = (arr)=>{
+    let newarr = [];
+    arr.forEach((item)=>{
+        let x = item.split("")
+        x[0] = x[0].toUpperCase()
+        newarr.push(x.join(""))
+    })
+    return newarr
+}
+
+let res = func(arr);
+
+
+//IIFE Function
+let func = (
+    function(arr){
+        let newarr = [];
+        arr.forEach((item)=>{
+            let x = item.split("")
+            x[0] = x[0].toUpperCase()
+            newarr.push(x.join(""))
+        })
+        return newarr
+    }
+)(arr)
+
+
+
+c.
+
+//Arrow Function
+let func = (arr)=>{
+    let sum = 0;
+    arr.forEach((item)=>{
+        sum+=item;
+    })
+    return sum
+}
+
+let res = func(arr);
+
+
+//IIFE Function
+let func = (
+    function(arr){
+        let sum = 0;
+        arr.forEach((item)=>{
+            sum+=item;
+        })
+        return sum
+    }
+)(arr);
+
+
+d.
+
+//Arrow Function
+let func = (item)=>{
+    if(item === 1){
+        return true
+    }
+    let i = 1;
+    let counter = 0
+    while(i<=item){
+        if(item%i === 0){
+            counter++;
+        }
+        i++;
+    }
+
+    if(counter <= 2){
+        return true
+    }else{
+        return false
+    }
+}
+let res = arr.filter((item)=> func(item))
+
+//IIFE FUNCTION
+let res = arr.filter((item)=>{
+    return(
+        function(item){
+            if(item === 1){
+                return true
+            }
+            let i = 1;
+            let counter = 0
+            while(i<=item){
+                if(item%i === 0){
+                    counter++;
+                }
+                i++;
+            }
+        
+            if(counter <= 2){
+                return true
+            }else{
+                return false
+            }
+        }
+    )(item)
+})
+
+
+e.
+
+//ARROW FUNCTION
+const isPalindrome = item => {
+   let i = 0;
+   let j = item.length - 1;
+   while(i < j) {
+      if(item[i] === item[j]) {
+         i++;
+         j--;
+      }
+      else {
+         return false;
+      }
+   }
+   return true;
+};
+const findPalindrome = arr => {
+   return arr.filter(item => isPalindrome(item));
+};
+
+
+//IIFEE FUNCTION
+let res = arr.filter((item)=>{
+    return(
+        function(item){
+            let i = 0;
+            let j = item.length - 1;
+            while(i < j) {
+                if(item[i] === item[j]) {
+                    i++;
+                    j--;
+                }
+                else {
+                    return false;
+                }
+            }
+            return true;
+        }
+    )(item)
+});
+
+
+f.
+
+//ARROW FUNCTION
+let func = (arr1, arr2)=>{
+    let arr = [...arr1, ...arr2]
+    let median;
+    if(arr.length % 2 === 0){
+        median = Math.floor((arr[arr.length/2 - 1] + arr[arr.length/2]) / 2);
+    }else{
+        median = arr[Math.floor(arr.length/2) + 1]
+    }
+
+    return median;
+}
+
+let res = func(arr)
+
+
+//IIFE FUNCTION
+let res = (
+    function(arr){
+        let arr = [...arr1, ...arr2]
+        let median;
+    if(arr.length % 2 === 0){
+        median = Math.floor((arr[arr.length/2 - 1] + arr[arr.length/2]) / 2);
+    }else{
+        median = arr[Math.floor(arr.length/2) + 1]
+    }
+
+    return median;
+    }
+)(arr1, arr2)
+
+
+g.
+
+// ARROW FUNCTION
+let func = (arr)=>{
+    let filteredarr  = arr.filter((item, index)=> arr.indexOf(item) === index)
+    return filteredarr
+}
+let res = func(arr);
+
+
+//IIFE FUNCTION
+let res = (
+        function(arr){
+            let filteredarr  = arr.filter((item, index)=> arr.indexOf(item) === index)
+            return filteredarr
+        }
+    )(arr);
+
+
+h.
+
+//ARROW FUNCTION
+let arr = [1,2,3,4,5];
+let func = (arr, k)=>{
+    if(k===0){
+        return arr
+    }
+    let i = 1;
+    while(i<=k){
+        arr.splice(0,0,arr.pop());
+        i++;
+    }
+    return arr;
+}
+let res = func(arr, 1);
+
+//IIFE FUNCTION
+let res = (
+    function(arr, k){
+        if(k===0){
+            return arr
+        }
+        let i = 1;
+        while(i<=k){
+            arr.splice(0,0,arr.pop());
+            i++;
+        }
+        return arr;
+    }
+)(arr, 2);
+
+
+3.
+
+a.
+let odd = (arr)=>{
+    let oddarr = []
+    arr.forEach(item => {
+        item%2!==0 && oddarr.push(item);
+    });
+
+    return oddarr;
+}
+
+let res = odd(arr);
+
+
+b.
+let func = (arr)=>{
+    let newarr = [];
+    arr.forEach((item)=>{
+        let x = item.split("")
+        x[0] = x[0].toUpperCase()
+        newarr.push(x.join(""))
+    })
+    return newarr
+}
+
+let res = func(arr);
+
+
+c.
+let func = (arr)=>{
+    let sum = 0;
+    arr.forEach((item)=>{
+        sum+=item;
+    })
+    return sum
+}
+
+let res = func(arr);
+
+
+d.
+let func = (item)=>{
+    if(item === 1){
+        return true
+    }
+    let i = 1;
+    let counter = 0
+    while(i<=item){
+        if(item%i === 0){
+            counter++;
+        }
+        i++;
+    }
+
+    if(counter <= 2){
+        return true
+    }else{
+        return false
+    }
+}
+let res = arr.filter((item)=> func(item));
+
+e.
+   let i = 0;
+   let j = item.length - 1;
+   while(i < j) {
+      if(item[i] === item[j]) {
+         i++;
+         j--;
+      }
+      else {
+         return false;
+      }
+   }
+   return true;
+};
+const findPalindrome = arr => {
+   return arr.filter(item => isPalindrome(item));
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+
+.main{
+    width: 85%;
+    margin: 10px auto;
+    border: 2px solid black;
+}
+
+header{
+    display: flex;
+}
+
+.lefttop{
+    width: 20%;
+    margin: 0 2rem 0 2px;
+    display: flex;
+}
+
+.lefttopimg{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+}
+
+.lefttopcontent{
+    margin: auto;
+    margin-left: 10px; 
+}
+
+.mainheading{
+    width: 50%;
+    text-align: center;
+    margin-left: 43px;
+}
+
+.righttop{
+    width: 20%;
+    margin-left: 75px;
+    display: flex;
+}
+
+.righttopimg{
+    width: 70%;
+    height: 60px;
+    margin: auto;
+}
+
+.righttopcontent{
+    margin: auto;
+    margin-left: 10px; 
+}
+

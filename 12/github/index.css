@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+.repo, .search, .leftpane, .last{
+    background-color: #323635;
+    border-radius: 10px;
+}
+
+nav{
+    background-color: #36454F;
+}
+
+nav > div{
+    margin-right: 40%;
+    margin-left: 2%;
+}
+
+
+.img-logo{
+    width: 3rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.row{
+    margin: 40px 60px 0 40px;
+}
+
+
+.repo{
+    width: 200px;
+    height: 180px;
+}
+
+.search{
+    height: 3rem;
+    width: 70%;
+    display: flex;
+    margin: auto;
+    color: white;
+}
+
+.last{
+    margin: auto;
+}
