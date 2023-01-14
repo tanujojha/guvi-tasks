@@ -49,3 +49,13 @@ header{
     margin-left: 10px; 
 }
 
+
+/* the horizonatal line div */
+
+.hrdiv{
+    display: flex;
+}
+
+.hrdiv > h6{
+    margin: 0 10%;
+}

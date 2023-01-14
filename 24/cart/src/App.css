@@ -1,0 +1,98 @@
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 80px 0 80px;
+}
+
+.navcontent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.linksdiv{
+    padding-top: 10px;
+}
+
+.linksdiv > ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.cartdiv{
+    margin-right: 10px;
+}
+
+.cartbtn{
+    border: 3px solid gray;
+    margin-bottom: 10px;
+}
+
+.fa-cart-shopping{
+    margin-right: 10px;
+}
+
+
+
+/* main section */
+.mainsection{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+/* card  */
+.cardmain{
+    width: 250px;
+    margin: 20px 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 10px gray inset;  right bottom blur spread color inset(inset is to change shadow from outside to inside) */
+    box-shadow: 5px 5px 15px gray;
+    padding: 0;
+}
+
+.cardimgdiv{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardimg{
+    width: inherit;
+    border-radius: 10px;
+}
+
+.cardbody > *{
+    text-align: center;
+        
+}
+
+.prodname{
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+.addbtn{
+    margin: 0 60px;
+    position: relative;
+    left: 7px;
+    margin-bottom: 5px;
+}
+
+.removeitem{
+    background-color: black;
+    color: white;
+}
+
+.removeitem:hover{
+    background-color: white !important;
+    color: black !important;
+}
